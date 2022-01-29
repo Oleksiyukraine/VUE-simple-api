@@ -9,10 +9,10 @@ async function bootstrap() {
   app.enableCors();
   app.useGlobalPipes(new ValidationPipe());
 
-  const port = process.env.SERVER_PORT || 8080;
+  const port = process.env.PORT || 3000;
 
   const options = new DocumentBuilder()
-    .setTitle('Vuejs Intership 2022 v1.0.0')
+    .setTitle('Vuejs Intership 2022 v1.0.0 + env')
     .setDescription('API started')
     .setVersion('1.0')
     .addBearerAuth({ in: 'header', type: 'http' })
