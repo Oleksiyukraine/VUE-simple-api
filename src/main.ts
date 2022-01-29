@@ -12,7 +12,7 @@ async function bootstrap() {
   const port = process.env.SERVER_PORT || 8080;
 
   const options = new DocumentBuilder()
-    .setTitle('Vuejs Intership 2022 v1')
+    .setTitle('Vuejs Intership 2022 v1.0.0')
     .setDescription('API started')
     .setVersion('1.0')
     .addBearerAuth({ in: 'header', type: 'http' })
