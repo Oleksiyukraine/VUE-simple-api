@@ -5,9 +5,14 @@
   "author": "",
   "private": true,
   "license": "UNLICENSED",
+  "engines": {
+    "node": "14.16.1"
+  },
   "scripts": {
     "start:dev": "nest start --watch",
-    "start:prod": "node dist/main"
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "build": "nest build"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
